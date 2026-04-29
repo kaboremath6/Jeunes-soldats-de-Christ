@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jeunes Soldats de Christ - Musique Gospel Spirituelle">
+    <title>Jeunes Soldats de Christ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>JEUNES SOLDATS DE CHRIST</h1>
+                <p class="tagline">Musique de l'Âme</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="#videos" class="nav-link">Vidéos</a></li>
+                <li><a href="#musiques" class="nav-link">Musiques</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Accueil / Hero -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img id="heroImage" src="placeholder-hero.jpg" alt="Jeunes Soldats de Christ">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-text">
+                <h2 class="hero-title">JEUNES SOLDATS DE CHRIST</h2>
+                <p class="hero-subtitle">Église Apostolique de Saaba</p>
+                <p class="hero-description">Musique inspirée, voix puissantes, message d'espérance et de foi.</p>
+                <div class="hero-buttons">
+                    <a href="#videos" class="btn btn-primary">Découvrir nos vidéos</a>
+                    <a href="#musiques" class="btn btn-secondary">Écouter la musique</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Vidéos -->
+    <section id="videos" class="videos-section">
+        <div class="section-container">
+            <h2 class="section-title">NOS VIDÉOS</h2>
+            <p class="section-subtitle">Découvrez nos performances vidéo en haute qualité</p>
+            
+            <div class="videos-grid" id="videosGrid">
+                <!-- Les vidéos seront injectées ici par JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Lecteur Vidéo -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="video-player-container">
+                <iframe id="videoPlayer" width="100%" height="600" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <h3 id="videoTitle"></h3>
+                <p id="videoDescription"></p>
+                <div class="video-actions">
+                    <a id="youtubeLink" href="#" target="_blank" class="btn btn-primary">Regarder sur YouTube</a>
+                    <button class="btn btn-secondary" id="downloadBtn">Télécharger (Premium)</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Musiques -->
+    <section id="musiques" class="musiques-section">
+        <div class="section-container">
+            <h2 class="section-title">NOS MUSIQUES</h2>
+            <p class="section-subtitle">Écoutez nos compositions originales</p>
+            
+            <div class="musiques-list" id="musiquesGrid">
+                <!-- Les musiques seront injectées ici par JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            <h2 class="section-title">NOUS CONTACTER</h2>
+            <p class="section-subtitle">Restez en contact avec Jeunes Soldats de Christ</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>📞 Téléphone</h3>
+                        <p><a href="tel:+226700528828">+226 70 05 28 28</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📍 Localisation</h3>
+                        <p>Église Apostolique de Saaba<br>Saaba, Burkina Faso</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>🙏 Mission</h3>
+                        <p>Partager l'amour de Dieu à travers la musique et l'art.</p>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Votre nom" required>
+                    <input type="email" placeholder="Votre email" required>
+                    <textarea placeholder="Votre message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Jeunes Soldats de Christ. Tous droits réservés.</p>
+            <p>Musique sacrée, message d'amour et d'espérance.</p>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
